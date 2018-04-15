@@ -1,0 +1,14 @@
+.xyz {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    width:110px;
+    font-size: 16px;
+    margin: 100px 10px;
+    position:absolute;
+    top:0;
+    right:0;
+   
+   }

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="vo.CreateEventVo" table="createevent">
+
+		<id name="event_id" column="event_id" >
+			<generator class="increment" /> 
+		</id>
+		
+		<property name="EIN">
+		<column name="EIN"/>
+		</property>	
+		
+		<property name="ngo_name">
+		<column name="ngo_name"/>
+		</property>		
+		
+		<property name="URL">
+			<column name="URL" />
+		</property>
+		
+		<property name="event_name">
+			<column name="event_name" />
+		</property>
+
+		<property name="location">
+			<column name="location" />
+		</property>
+		<property name="time">
+			<column name="time" />
+		</property>
+		<property name="date">
+			<column name="date" />
+		</property>
+		<property name="description">
+			<column name="description" />
+		</property>
+		<property name="active">
+			<column name="active" />
+		</property>
+		
+<!-- <many-to-one name="abc" class="vo.insertVO" column="EIN" insert="false" update="false" ></many-to-one>	 -->	
+		
+</class>
+		
+
+</hibernate-mapping>

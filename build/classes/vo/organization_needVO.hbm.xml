@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="vo.organization_needVO" table="organization_need">
+
+<id name="EIN" column="ein" type="string">
+<generator class="assigned"/>
+</id>
+<!-- <property name="EIN">
+<column name="EIN" />
+</property> -->
+<property name="elec">
+<column name="elec" />
+</property>
+
+<property name="edu">
+<column name="edu" />
+</property>
+<property name="health">
+<column name="health" />
+</property>
+<property name="hunger">
+<column name="hunger" />
+</property>
+<property name="sports">
+<column name="sports" />
+</property>
+<property name="household">
+<column name="household" />
+</property>
+<many-to-one name="orgVO" class="vo.insertVO" column="EIN" insert="false" update="false"></many-to-one>
+    
+</class>
+
+</hibernate-mapping>
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="vo.insertVO" table="organization">
+
+		<id name="EIN" column="ein" type="string">
+			<!-- <generator class="increment" /> -->
+		</id>
+
+		<property name="name">
+			<column name="name" />
+		</property>
+
+		<property name="city">
+			<column name="city" />
+		</property>
+		<property name="state">
+			<column name="state" />
+		</property>
+		<property name="type">
+			<column name="type" />
+		</property>
+		<property name="URL">
+			<column name="URL" />
+		</property>
+		<property name="phone_no">
+			<column name="phone_no" />
+		</property>
+		<property name="email_id">
+			<column name="email_id" />
+		</property>
+		<property name="password">
+			<column name="password" />
+		</property>
+		<property name="active">
+			<column name="active" />
+		</property>
+</class>
+		
+
+</hibernate-mapping>

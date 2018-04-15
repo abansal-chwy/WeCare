@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="vo.reminderVo" table="remindermail">
+
+	<composite-id ><!-- name="id" class="reminderkey" -->
+      <key-property name="event_id" column="event_id"/>
+      <key-property name="user_email" column="user_email"/>
+   </composite-id>
+   
+		
+		<property name="event_name">
+			<column name="event_name" />
+		</property>
+		<property name="event_date">
+			<column name="event_date" />
+		</property>
+		<property name="reminder_date">
+			<column name="reminder_date" />
+		</property>
+		<property name="mail_sent">
+			<column name="mail_sent" />
+		</property>
+		
+</class>
+		
+
+</hibernate-mapping>

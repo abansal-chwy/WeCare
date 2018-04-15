@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="vo.insertapproval" table="approval">
+	
+		<id name="fid" column="fid">
+			<generator class="increment" />
+		</id>
+
+		<property name="status">
+			<column name="status" />
+		</property>
+
+		<many-to-one class="vo.insertVO" name="insertVOobj" column="EIN" ></many-to-one>
+</class>
+		
+
+</hibernate-mapping>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="vo.userVO" table="usertable">
+
+		<id name="user_id" column="user_id" >
+			<generator class="increment" /> 
+		</id>
+
+		<property name="user_name">
+			<column name="user_name" />
+		</property>
+
+		<property name="user_city">
+			<column name="user_city" />
+		</property>
+		<property name="user_state">
+			<column name="user_state" />
+		</property>
+		<property name="user_number">
+			<column name="user_number" />
+		</property>
+		<property name="user_email">
+			<column name="user_email" />
+		</property>
+		<property name="user_psw">
+			<column name="user_psw" />
+		</property>
+</class>
+		
+
+</hibernate-mapping>
