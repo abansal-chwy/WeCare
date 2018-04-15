@@ -69,7 +69,7 @@ public class emailSendController extends HttpServlet {
 			if (fetchedemail.size()>0)
 			{
 				final  String username = "admitatwecare@gmail.com";
-				final  String password = "Spring@2017";
+				final  String password = "#";
 				Properties props = new Properties();
 				props.put("mail.smtp.host", "smtp.gmail.com");
 				props.put("mail.smtp.socketFactory.port", "465");
