@@ -12,7 +12,7 @@ import javax.mail.internet.MimeMessage;
 public class sendConfirmation {
 	
 	final static String username = "admitatwecare@gmail.com";
-	final static String password = "Spring@2017";
+	final static String password = "#";
 	final static String adminEmail = "separkingadm@gmail.com";
 
 	public static void send(String email, String data) {
